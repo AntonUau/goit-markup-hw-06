@@ -42,5 +42,90 @@ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero\ image/)
+    url(../images/people-office-tablet-1.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .container-one {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-tablet-2.jpg)
+    }
+}
+.maine {
+    font-size: 56px;
+    line-height: 1.07;
+    margin-bottom: 36px;
+    max-width: 496px;
+    text-transform: none;
+}
+.description {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 72px 24px;
+    justify-content: center;
+}
+.description-item {
+    width: 356px;
+}
+.title {
+    text-align: left;
+}
+.heder-title-list {
+    gap: 64px 24px;
+}
+.ul-our-portfolio {
+    gap: 72px 24px;
+}
+.portfolio-list {
+    width: 356px;
+}
+.modal {
+width: 408px;
+padding: 72px 24px 24px 24px;
+}
+.modal-form {
+    width: 360px;
+}
+.modal-input {
+    width: 360px;
+}
+.modal-in {
+    padding-left: 38px;
+}
+
+.footer-foot {
+    padding-top: 98px;
+    padding-bottom: 96px;
+}
+.footer-foot,
+.container {
+    max-width: 530px;
+    gap: 72px 24px;
+}
+.footer-logo-text {
+    text-align: left;
+}
+.footer-text {
+    width: 264px;
+}
+.footer-icon {
+    display: block;
+}
+.footer-media {
+    margin-bottom: 16px;
+}
+.footer-foot,
+.icon-media {
+    justify-content: center;
+}
+.footer-subscribe {
+    display: block;
+}
+.form-subscribe {
+    flex-wrap: nowrap;
+    gap: 24px;
 }
