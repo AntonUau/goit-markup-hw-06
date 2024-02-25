@@ -1,0 +1,89 @@
+.container {
+    max-width: 1158px;
+    padding: 0 15px;
+}
+.link-logo {
+    margin-right: 76px;
+}
+.heder-address {
+    margin-left: auto
+}
+.heder-adress-list-list {
+flex-direction: row;
+gap: 40px;
+}
+.heder-address-link-link {
+    font-size: 16px;
+    line-height: 1.5;
+}
+.sec-one {
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.one-line {
+    max-width: 1440px;
+    padding: 188px 0;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office-main.jpg);
+}
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .one-line {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/people-office-main.jpg)
+    }
+}
+.maine {
+    margin-bottom: 48px;
+
+}
+.description {
+    flex-direction: row;
+    gap: 24px;
+}
+.description-item {
+    width: 264px;
+}
+.title {
+line-height: 1.2;
+font-weight: 500;
+font-size: 20px;
+}
+.heder-title-list {
+gap: 24px;
+flex-wrap: nowrap;
+}
+.text {
+    font-weight: 400;
+    text-align: left;
+}
+.ul-our-portfolio {
+    gap: 48px 24px;
+}
+.portfolio-list {
+    width: 360px;
+}
+.footer-foot,
+.container {
+    flex-wrap: nowrap;
+    align-items: baseline;
+    gap: 0;
+    max-width: 1158px;
+}
+.footer-logo-text {
+    margin-right: 120px;
+}
+.footer-foot {
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.footer-subscribe {
+    margin-left: 80px;
+}

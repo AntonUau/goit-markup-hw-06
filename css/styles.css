@@ -86,7 +86,24 @@ background-size: cover;
 padding: 188px 0;
 max-width: 1440px;
 margin: 0 auto;
+background-image: linear-gradient(
+    rgba(46, 47, 66, 0.7),
+    rgba(46, 47, 66, 0.7)
+),
+url(../images/peopleoffice-mob-1.jpg);
 }
+@media screen and (min-device-pixel-ratio: 2),
+(min-resolution: 192dpi),
+(min-resolution: 2dppx) {
+    .one-line {
+        background-image: linear-gradient(
+            rgba(46, 47, 66, 0.7),
+            rgba(46, 47, 66, 0.7)
+        ),
+        url(../images/peopleoffice-mob-2.jpg)
+    }
+}
+
 .sec-two {
     padding-top: 120px;
     padding-bottom: 120px;
@@ -865,3 +882,9 @@ background-color: #404bbf;
 .modal-button:focus {
     background-color: #404bbf;
 }
+@media screen and (max-width: 1157px) {
+    .sec-two-icon {
+        display: none;
+    }
+}
+
