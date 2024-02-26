@@ -138,9 +138,6 @@ flex-direction: column;
 height: 64px;
 flex-shrink: 0;
 }
-.description-item {
-
-}
 
 .button-butt {
 background: var(--IRIS, #4D5AE5);
