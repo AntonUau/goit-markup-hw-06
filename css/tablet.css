@@ -1,131 +1,171 @@
 .container {
-    max-width: 768px;
+  max-width: 768px;
 }
-.link-logo {
-    margin-right: 120px;
+.logo {
+  margin-right: 120px;
 }
-.list {
-    display: flex;
-    gap: 40px;
+
+.navigation-list {
+  display: flex;
+  gap: 40px;
 }
-.nav-link:hover,
-.nav-link:focus,
-.nav-link:active {
-    color: #404bbf;
+
+.contacts-list {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
-.link::after {
-    background-color: #404bbf;
-    position: absolute;
-    left: 0;
-    bottom: -1px;
-    width: 100%;
-    height: 4px;
-    border-radius: 2px;
-    content: "";
+
+.navigation-item:hover,
+.navigation-item:focus,
+.navigation-item:active {
+  color: #404bbf;
 }
-.heder-adress-list-list {
-color: #434455;
-font-size: 12px;
-line-height: 1.16;
-text-align: left;
-font-style: normal;
-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+.contacts-item {
+  color: #434455;
+  font-size: 12px;
+  line-height: 1.16;
+  text-align: left;
+  font-style: normal;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.heder-adress-list-list:hover,
-.heder-adress-list-list:focus {
-    color: #404bbf;
+
+.contacts-item:hover,
+.contacts-item:focus {
+  color: #404bbf;
 }
-.one-line {
-    max-width: 768px;
-    padding: 112px 0;
+
+.current-page::after {
+  background-color: #404bbf;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  content: "";
+}
+
+.menu-is-open {
+  display: none;
+}
+
+.banner-section {
+  max-width: 768px;
+  padding: 112px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/peopleoffice-tab-x1.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office-tablet-1.jpg);
-}
-@media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .one-line {
-        background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office-tablet-2.jpg)
-    }
-}
-.maine {
-    font-size: 56px;
-    line-height: 1.07;
-    margin-bottom: 36px;
-    max-width: 496px;
-    text-transform: none;
-}
-.description {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 72px 24px;
-    justify-content: center;
-}
-.description-item {
-    width: 356px;
-}
-.title {
-    text-align: left;
-}
-.heder-title-list {
-    gap: 64px 24px;
-}
-.ul-our-portfolio {
-    gap: 72px 24px;
-}
-.portfolio-list {
-    width: 356px;
-}
-.modal {
-width: 408px;
-padding: 72px 24px 24px 24px;
-}
-.modal-form {
-    width: 360px;
-}
-.modal-input {
-    width: 360px;
-}
-.modal-in {
-    padding-left: 38px;
+      ),
+      url(../images/peopleoffice-tab-x2.jpg);
+  }
 }
 
-.footer-foot {
-    padding-top: 98px;
-    padding-bottom: 96px;
+.banner-title {
+  font-size: 56px;
+  line-height: 1.07;
+  margin-bottom: 36px;
+  max-width: 496px;
+  text-transform: none;
 }
-.footer-foot,
-.container {
-    max-width: 530px;
-    gap: 72px 24px;
+
+.features-list {
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 72px 24px;
+  justify-content: center;
 }
-.footer-logo-text {
-    text-align: left;
+
+.features-item {
+  width: 356px;
 }
-.footer-text {
-    width: 264px;
+
+.features-name {
+  text-align: left;
 }
-.footer-icon {
-    display: block;
+
+.team-list {
+  gap: 64px 24px;
 }
-.footer-media {
-    margin-bottom: 16px;
+
+.portfolio-list {
+  gap: 72px 24px;
 }
-.footer-foot,
-.icon-media {
-    justify-content: center;
+
+.portfolio-item {
+  width: 356px;
 }
-.footer-subscribe {
-    display: block;
+
+.modal {
+  width: 408px;
+  padding: 72px 24px 24px 24px;
 }
-.form-subscribe {
-    flex-wrap: nowrap;
-    gap: 24px;
+
+.form {
+  width: 360px;
+}
+
+.label {
+  width: 360px;
+}
+.input {
+  padding-left: 38px;
+}
+
+/*! Footer */
+
+.footer {
+  padding-top: 98px;
+  padding-bottom: 96px;
+}
+
+.footer .container {
+  max-width: 530px;
+  gap: 72px 24px;
+}
+
+.logo-info {
+  text-align: left;
+}
+
+.footer-info {
+  width: 264px;
+}
+
+.social-container {
+  display: block;
+}
+
+.text {
+  margin-bottom: 16px;
+}
+
+.footer .icon-list {
+  justify-content: center;
+}
+
+.subscribe-container {
+  display: block;
+}
+
+.subscribe-input {
+  width: 264px;
+}
+
+.subscribe-form {
+  flex-wrap: nowrap;
+  gap: 24px;
 }

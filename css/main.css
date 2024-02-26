@@ -1,89 +1,111 @@
 .container {
-    max-width: 1158px;
-    padding: 0 15px;
+  max-width: 1158px;
+  padding: 0 15px;
 }
-.link-logo {
-    margin-right: 76px;
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
-.heder-address {
-    margin-left: auto
+
+.logo {
+  margin-right: 76px;
 }
-.heder-adress-list-list {
-flex-direction: row;
-gap: 40px;
+
+.contacts {
+  margin-left: auto;
 }
-.heder-address-link-link {
-    font-size: 16px;
-    line-height: 1.5;
+
+.contacts-list {
+  flex-direction: row;
+  gap: 40px;
 }
-.sec-one {
-    padding-top: 120px;
-    padding-bottom: 120px;
+
+.contacts-item {
+  font-size: 16px;
+  line-height: 1.5;
 }
-.one-line {
-    max-width: 1440px;
-    padding: 188px 0;
+
+.banner-section {
+  max-width: 1440px;
+  padding: 188px 0;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/peopleoffice.jpg);
+}
+
+@media screen and (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .banner-section {
     background-image: linear-gradient(
         rgba(46, 47, 66, 0.7),
         rgba(46, 47, 66, 0.7)
-    ),
-    url(../images/people-office-main.jpg);
+      ),
+      url(../images/peopleoffice-x2.jpg);
+  }
 }
-@media screen and (min-device-pixel-ratio: 2),
-(min-resolution: 192dpi),
-(min-resolution: 2dppx) {
-    .one-line {
-        background-image: linear-gradient(
-            rgba(46, 47, 66, 0.7),
-            rgba(46, 47, 66, 0.7)
-        ),
-        url(../images/people-office-main.jpg)
-    }
-}
-.maine {
-    margin-bottom: 48px;
 
+.banner-title {
+  margin-bottom: 48px;
 }
-.description {
-    flex-direction: row;
-    gap: 24px;
+
+.features-list {
+  flex-direction: row;
+  gap: 24px;
 }
-.description-item {
-    width: 264px;
+
+.features-item {
+  width: 264px;
 }
-.title {
-line-height: 1.2;
-font-weight: 500;
-font-size: 20px;
+
+.features-name {
+  line-height: 1.2;
+  font-weight: 500;
+  font-size: 20px;
 }
-.heder-title-list {
-gap: 24px;
-flex-wrap: nowrap;
+
+.features-description {
+  font-weight: 400;
+  text-align: left;
 }
-.text {
-    font-weight: 400;
-    text-align: left;
+
+.team-list {
+  gap: 24px;
+  flex-wrap: nowrap;
 }
-.ul-our-portfolio {
-    gap: 48px 24px;
-}
+
 .portfolio-list {
-    width: 360px;
+  gap: 48px 24px;
 }
-.footer-foot,
-.container {
-    flex-wrap: nowrap;
-    align-items: baseline;
-    gap: 0;
-    max-width: 1158px;
+
+.portfolio-item {
+  width: 360px;
 }
-.footer-logo-text {
-    margin-right: 120px;
+/*! Footer */
+
+.footer .container {
+  flex-wrap: nowrap;
+  align-items: baseline;
+  gap: 0;
+  max-width: 1158px;
 }
-.footer-foot {
-    padding-top: 100px;
-    padding-bottom: 100px;
+
+.logo-info {
+  margin-right: 120px;
 }
-.footer-subscribe {
-    margin-left: 80px;
+
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.subscribe-container {
+  margin-left: 80px;
+}
+
+.subscribe-input {
+  opacity: 1;
 }
